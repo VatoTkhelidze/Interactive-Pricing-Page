@@ -128,8 +128,9 @@ h4{
 
 input:checked + .slider {
     background-color: #7AEADF;
-
 }
+
+
 
 .switch{
     position: relative;
@@ -154,6 +155,10 @@ input:checked + .slider {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
+}
+
+.slider:hover{
+    background-color: #7AEADF;
 }
 
 .slider.round {
@@ -342,6 +347,8 @@ input {
 .desktop_traffic{
     display: flex;
     align-items: center;
+
+
 }
 
 
