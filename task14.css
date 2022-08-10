@@ -52,13 +52,15 @@ h4{
     margin-top: 8px;
 }
 
-.white_box{
+.white_box {
+    display: flex;
     background: #FFFFFF;
-    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    box-shadow: 0px 20px 30px -5px rgb(127 137 185 / 15%);
     border-radius: 8px;
     width: 100%;
     margin-top: 64px;
     padding-bottom: 32px;
+    flex-direction: column;
 }
 
 .pageview_scroll_price{
@@ -73,7 +75,7 @@ h4{
     background: #ECF0FB;
     border-radius: 5px;
     height: 8px;
-    width: 85%;
+    width: 279px;
     margin-top: 41px;
 }
 
@@ -315,6 +317,12 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.desktop_ticks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 11px;
 }
 
@@ -328,4 +336,138 @@ input {
     border-radius: 50%;
     background: #10D8C4;
     box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+    margin-left: 209px;
+}
+
+.desktop_traffic{
+    display: flex;
+    align-items: center;
+}
+
+
+.desktop_h4,
+.desktop_100k_traffic,
+.desktop_percent{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1440px){
+
+    h1{
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .desktop_h4{
+        display: block;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: #848EAD;
+    }
+
+    .desktop_100k_traffic{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .desktop_pageviews{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 1.71429px;
+        text-transform: uppercase;
+        color: #848EAD;
+    }
+
+    .slider_line{
+        width: 444px;
+    }
+
+
+    .white_box{
+        height: 397px;
+        width: 540px;
+        left: 0px;
+        top: 0px;
+        border-radius: 8px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+
+    .desktop_percent{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #FF8D68;
+        background: #FEEDE8;
+        border-radius: 9.5px;
+        height: 19px;
+        width: 80px;
+    }
+
+    .monthly_slider_yearly_percent{
+        margin-top: 56px;
+        margin-left: 70px;
+    }
+
+    .ticks_startButton{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .desktop_ticks{
+        align-items: flex-start;
+    }
+    .start{
+        margin: 0;
+    }
+    .yearly_billing {
+        margin-right: 9px;
+    }
+
+
+
+
+
+
+
+
+
+
+    h4,
+    .pageviews,
+    .traffic,
+    .percent{
+        display: none;
+    }
+   
 }
