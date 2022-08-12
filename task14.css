@@ -521,6 +521,12 @@ input {
         margin-right: 9px;
     }
 
+    .top_circles {
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 49px;
+    }
+
 
 
 
