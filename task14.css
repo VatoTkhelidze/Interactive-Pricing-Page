@@ -13,6 +13,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-image: url(./images/bg-pattern.svg);
+    background-size: contain;
     background-repeat: no-repeat;
     padding-left: 24px;
     padding-right: 24px;
