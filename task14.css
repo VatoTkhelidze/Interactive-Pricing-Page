@@ -96,7 +96,29 @@ h4{
     color: #293356;
 }
 
+.moneyMobile{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.8px;
+    color: #293356;
+}
+
 .month{
+    display: block;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+    margin-left: 10px;
+}
+.monthMobile{
     display: block;
     font-family: 'Manrope';
     font-style: normal;
@@ -110,6 +132,17 @@ h4{
 
 
 .year{
+    display: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+    margin-left: 10px;
+}
+.yearMobile{
     display: none;
     font-family: 'Manrope';
     font-style: normal;
