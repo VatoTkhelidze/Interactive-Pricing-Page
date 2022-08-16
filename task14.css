@@ -68,6 +68,7 @@ h4{
     flex-direction: column;
     align-items: center;
     padding: 0 24px;
+    position: relative;
 }
 
 
@@ -400,7 +401,6 @@ input {
     border-radius: 8px;
     background: #ecf0fb;
     outline: none;
-    opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
     margin-top: 40px;
@@ -414,6 +414,8 @@ input {
   .slider_circle::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
+    position: relative;
+    z-index: 50;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -435,6 +437,23 @@ input {
     background: #04AA6D;
     cursor: pointer;
   }
+
+  .colored_input{
+    width: 100%;
+    height: 8px;
+    background-color: #A4F3EB;
+    border-radius: 8px;
+}
+
+.colored_input_container{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    height: 8px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
 
 
@@ -574,6 +593,13 @@ input {
         position: absolute;
         margin-left: 120px;
         margin-top: 49px;
+    }
+
+    
+
+    .colored_input_container{
+        top: 124px;
+        width: 0%;
     }
 
 

@@ -8,7 +8,8 @@ let yearMobile = document.querySelector('.yearMobile');
 let month = document.querySelector('.month');
 let year = document.querySelector('.year');
 let viewers = document.querySelector('.pageviewers');
-let viewersMobile = document.querySelector('.pageviews')
+let viewersMobile = document.querySelector('.pageviews');
+let sliderColor = document.querySelector('.colored_input_container');
 
 for(i=0; i<sliderCircle.length; i++){
     sliderCircle.length.style.backgroundColor = '#A4F3EB'
@@ -26,6 +27,7 @@ sliderCircle.addEventListener('input', function(){
         }
         viewers.value = '25K ' + 'PAGEVIEWS';
         viewersMobile.value = '25K ' + 'PAGEVIEWS';
+        sliderColor.style.width = '0%'
     }
     if(sliderCircle.value == 2){
         if(Checkbox.checked == true){
@@ -37,6 +39,7 @@ sliderCircle.addEventListener('input', function(){
         }
         viewers.value = '50K ' + 'PAGEVIEWS';
         viewersMobile.value = '50K ' + 'PAGEVIEWS';
+        sliderColor.style.width = '40%'
     }
     if(sliderCircle.value == 3){
         if(Checkbox.checked == true){
@@ -48,6 +51,7 @@ sliderCircle.addEventListener('input', function(){
         }
         viewers.value = '100K ' + 'PAGEVIEWS';
         viewersMobile.value = '100K ' + 'PAGEVIEWS';
+        sliderColor.style.width = '53%'
     }
     if(sliderCircle.value == 4){
         if(Checkbox.checked == true){
@@ -59,6 +63,7 @@ sliderCircle.addEventListener('input', function(){
         }
         viewers.value = '150K ' + 'PAGEVIEWS';
         viewersMobile.value = '150K ' + 'PAGEVIEWS';
+        sliderColor.style.width = '73%'
     }
     if(sliderCircle.value == 5){
         if(Checkbox.checked == true){
@@ -70,6 +75,7 @@ sliderCircle.addEventListener('input', function(){
         }
         viewers.value = '200K ' + 'PAGEVIEWS';
         viewersMobile.value = '200K ' + 'PAGEVIEWS';
+        sliderColor.style.width = '100%'
     }
 })
 
